@@ -2,8 +2,12 @@ import { useState, type FormEvent } from 'react'
 import './App.css'
 
 // Define the pip positions for each die face
+// The positions are numbered as follows:
+// 1 2 3
+// 4 5 6
+// 7 8 9    
 const facePips: Record<number, number[]> = {
-  1: [5], 
+  1: [5],
   2: [1, 9],
   3: [1, 5, 9],
   4: [1, 3, 7, 9],
